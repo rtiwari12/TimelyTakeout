@@ -5,11 +5,26 @@ from src import db
 
 store = Blueprint('store', __name__)
 
-# Get all stores from the DB
+# Get all store info from the DB
 @store.route('/stores', methods=['GET'])
 def get_stores():
     cursor = db.get_db().cursor()
     cursor.execute('select * from Store')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+# Get all store names from the DB
+@store.route('/stores/names', methods=['GET'])
+def get_storenames():
+    cursor = db.get_db().cursor()
+    cursor.execute('select Name from Store')
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
