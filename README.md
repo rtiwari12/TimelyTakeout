@@ -21,7 +21,8 @@ of implementing bank account transfer capabilities in the future. The routes for
 manager allow access to all store managers from within the database ('get'), allow the 
 ability to apply a new store and store manager ('post'), and allow a store manager to update
 their store's inventory ('post'). Finally, we are also able to access all stores from the 
-database ('get') as well as all the products within a certain store ('get'). 
+database ('get'), their names ('get'), as well as all the products within a certain store 
+('get'). 
 
 ## How to setup and start the containers
 **Important** - you need Docker Desktop installed
