@@ -1,8 +1,27 @@
-# MySQL + Flask Boilerplate Project
+Product Pitch Link: _____________________
 
-This repo contains a boilerplate setup for spinning up 2 docker containers: 
-1. A MySQL 8 container for obvious reasons
-1. A Python Flask container to implement a REST API
+Welcome to TimelyTakeout! Our product will offer a grocery delivery service that combines  
+the best interests of consumers, employees, and store owners alike. TimelyTakeout will
+allow consumers to select products from a store’s inventory to add to an order, and 
+place said orders using a chosen address and payment method to be carried out by 
+employees. The manager of each store that uses TimelyTakeout will also interact with 
+the application to ensure that products can be ordered and delivered as efficiently as 
+possible. With this product, we hope to provide a simple yet effective service for 
+virtual grocery shopping that surpasses the many shortcomings of existing services.
+Consumers should be able to easily interact with the application, employees should
+be able to easily carry out orders and manage the money they earn from doing so, 
+and store managers should be easily able to adjust their store’s online inventory.
+
+TimelyTakeout's current implementation contains routes for the consumer persona that
+currently allow us to get info of all customers from the database ('get'), get info of a 
+particular customer ('get'), and enable customers to leave a review of an order ('post'). 
+For the employee persona, the current routes allow us to access a certain employee from the
+database ('get') and get all transactions involving a certain employee ('get'), in hopes 
+of implementing bank account transfer capabilities in the future. The routes for a store 
+manager allow access to all store managers from within the database ('get'), allow the 
+ability to apply a new store and store manager ('post'), and allow a store manager to update
+their store's inventory ('post'). Finally, we are also able to access all stores from the 
+database ('get') as well as all the products within a certain store ('get'). 
 
 ## How to setup and start the containers
 **Important** - you need Docker Desktop installed
@@ -14,11 +33,8 @@ This repo contains a boilerplate setup for spinning up 2 docker containers:
 1. Build the images with `docker compose build`
 1. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. 
 
-## For setting up a Conda Web-Dev environment:
 
-1. `conda create -n webdev python=3.9`
-1. `conda activate webdev`
-1. `pip install flask flask-mysql flask-restful cryptography flask-login`
+
 
 
 
