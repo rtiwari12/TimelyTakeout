@@ -6,7 +6,7 @@ from src import db
 store_mgr = Blueprint('store_mgr', __name__)
 
 # get all store managers
-@store_mgr.route('/store_mgr', methods=['GET'])
+@store_mgr.route('/managers', methods=['GET'])
 def test():
     cursor = db.get_db().cursor()
     cursor.execute('select * from StoreManager')
@@ -23,7 +23,7 @@ def test():
 
 # apply to be a store manager with a relevant store
 # idea -> receive store info and mgr info, add to database if not duplicated
-@store_mgr.route('/store_mgr/apply')
+@store_mgr.route('/apply')
 def add_store():
     return """
         <h2>Store Info</h2>
@@ -83,7 +83,7 @@ def post_applyform():
 # update store inventory
 # idea -> 1) log in with store name, mgr first name, mgr last name, mgr id
 #         2) receive product and new stock, update in database
-@store_mgr.route('/store_mgr/update')
+@store_mgr.route('/update')
 def update_inventory():
     return """
             <h2>Update Inventory</h2>
