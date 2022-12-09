@@ -16,13 +16,13 @@ TimelyTakeout's current implementation contains routes for the consumer persona 
 currently allow us to get info of all customers from the database ('get'), get info of a 
 particular customer ('get'), and enable customers to leave a review of an order ('post'). 
 For the employee persona, the current routes allow us to access a certain employee from the
-database ('get') and get all transactions involving a certain employee ('get'), in hopes 
-of implementing bank account transfer capabilities in the future. The routes for a store 
-manager allow access to all store managers from within the database ('get'), allow the 
-ability to apply a new store and store manager ('post'), and allow a store manager to update
-their store's inventory ('post'). Finally, we are also able to access all stores from the 
-database ('get'), their names ('get'), as well as all the products within a certain store 
-('get'). 
+database ('get'), get all existing payments ('get'), and get all transactions involving a 
+certain employee ('get'), in hopes of implementing bank account transfer capabilities in 
+the future. The routes for a store manager allow access to all store managers from within 
+the database ('get'), allow the ability to apply a new store and store manager ('post'),
+and allow a store manager to update their store's inventory ('post'). Finally, we are also
+able to access all stores from the database ('get'), their names ('get'), as well as all 
+the products within a certain store ('get'). 
 
 ## How to setup and start the containers
 **Important** - you need Docker Desktop installed
