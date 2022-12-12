@@ -75,7 +75,7 @@ def review():
                 </review>
                 """
 
-# gather all product info and new stock and update in database
+# Allow customer to leave a review of an order
 @consumers.route("/review", methods = ['POST'])
 def post_updateform():
     current_app.logger.info(request.form)
