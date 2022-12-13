@@ -25,6 +25,9 @@ their store's inventory ('post'). Finally, we are also able to access all stores
 database ('get'), their names ('get'), as well as all the products within a certain store 
 ('get'). 
 
+<img width="324" alt="image" src="https://user-images.githubusercontent.com/113547817/207406395-2d70a063-1312-4103-ae63-80ccaa4596af.png">
+
+
 ## How to setup and start the containers
 **Important** - you need Docker Desktop installed
 
