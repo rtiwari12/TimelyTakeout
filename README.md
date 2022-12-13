@@ -25,7 +25,18 @@ their store's inventory ('post'). Finally, we are also able to access all stores
 database ('get'), their names ('get'), as well as all the products within a certain store 
 ('get'). 
 
-<img width="324" alt="image" src="https://user-images.githubusercontent.com/113547817/207406395-2d70a063-1312-4103-ae63-80ccaa4596af.png">
+
+View of stores:
+<img width="956" alt="image" src="https://user-images.githubusercontent.com/113547817/207407411-ff5cc3e0-6a9b-4dc2-847c-0e14bf1491af.png">
+
+View of reviews:
+<img width="949" alt="image" src="https://user-images.githubusercontent.com/113547817/207407528-0782de5b-96e2-4402-a338-b4f562175061.png">
+
+View of employee payments:
+<img width="943" alt="image" src="https://user-images.githubusercontent.com/113547817/207407756-7a882c43-c833-4f91-881a-641e9b3efee4.png">
+
+View of partnership application:
+<img width="944" alt="image" src="https://user-images.githubusercontent.com/113547817/207407869-5c0067a0-848c-4a06-86dc-cd72372836e4.png">
 
 
 ## How to setup and start the containers
@@ -37,10 +48,3 @@ database ('get'), their names ('get'), as well as all the products within a cert
 1. In a terminal or command prompt, navigate to the folder with the `docker-compose.yml` file.  
 1. Build the images with `docker compose build`
 1. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. 
-
-
-
-
-
-
-
