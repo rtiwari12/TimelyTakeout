@@ -1,4 +1,4 @@
-Product Pitch Link: _____________________
+Product Pitch Link: https://youtu.be/2HvzjrypxU4
 
 Welcome to TimelyTakeout! Our product will offer a grocery delivery service that combines  
 the best interests of consumers, employees, and store owners alike. TimelyTakeout will
